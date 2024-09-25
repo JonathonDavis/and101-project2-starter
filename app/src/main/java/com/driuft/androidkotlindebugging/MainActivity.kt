@@ -8,6 +8,7 @@ import android.widget.Button
 import com.driuft.androidkotlindebugging.ui.*
 import kotlin.coroutines.coroutineContext
 
+
 class MainActivity : AppCompatActivity() {
 
     private val challengeOneButton: Button get() = findViewById(R.id.challenge_one)
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun launchHelloWorldActivity() {
-        val i = Intent(404 as Context, HelloWorldActivity::class.java)
+        val i = Intent(this, HelloWorldActivity::class.java)
         startActivity(i)
     }
 
